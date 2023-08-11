@@ -1,4 +1,4 @@
-// start in quokka.js extension(if you don't have it yet, install it from Extensions Tab in VS code): 
+// start in quokka.js extension(if you don't have it yet, install it from Extensions Tab in VS code):
 // press ctrl+shift+p, then in the search box, type "Quokka.js: Start On Current File" and hit enter
 
 // or alternatively, use node.js:
@@ -40,5 +40,11 @@ export default class Stack {
   clear() {
     // clears the stack
     this.dataStore = [];
+    this.size = 0;
+  }
+
+  isEmpty() {
+    // returns a boolean based on whether or not the stack is empty
+    return this.size === 0;
   }
 }
